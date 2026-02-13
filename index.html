@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para mi San Valentín 💘</title>
+
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      font-family: "Georgia", serif;
+      background: #fff6fb;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .container{
+      width: 90%;
+      max-width: 900px;
+      display:flex;
+      gap:40px;
+      align-items:center;
+      justify-content:center;
+      padding:30px;
+      border-radius:20px;
+      background: rgba(255,255,255,0.7);
+      box-shadow: 0 0 25px rgba(0,0,0,0.08);
+    }
+
+    .left{
+      flex:1;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .left img{
+      width: 320px;
+      max-width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 18px rgba(0,0,0,0.15);
+    }
+
+    .right{
+      flex:1;
+      color:#3b3b3b;
+    }
+
+    h1{
+      font-size: 28px;
+      margin-bottom: 15px;
+      color:#d63384;
+    }
+
+    #typeText{
+      font-size: 18px;
+      line-height: 1.6;
+      white-space: pre-line;
+    }
+
+    .extra{
+      margin-top: 18px;
+      font-size: 14px;
+      color:#666;
+    }
+
+    .heart{
+      font-size: 22px;
+    }
+
+    @media (max-width: 750px){
+      .container{
+        flex-direction: column;
+        text-align:center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LADO IZQUIERDO (IMAGEN) -->
+    <div class="left">
+      <!-- CAMBIA "foto.jpg" por el nombre de tu imagen -->
+      <img src="foto.jpg" alt="Mi amor 💘">
+    </div>
+
+    <!-- LADO DERECHO (TEXTO) -->
+    <div class="right">
+      <h1>Para ti, mi amor 💖</h1>
+
+      <p id="typeText"></p>
+
+      <p class="extra">
+        Llevamos <b>5 meses y 23 días</b> juntas… y cada día te amo más.
+        <span class="heart">💘</span>
+      </p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
